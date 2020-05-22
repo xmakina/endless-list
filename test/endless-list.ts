@@ -17,17 +17,19 @@ describe("endless-list contract test suite", () => {
     await client.checkContract();
   });
 
-  describe("when checking security measures", () => {
-    describe("deploying an instance of the contract", () => {
-      let reciept: Receipt;
-      before(async () => {
-        reciept = await client.deployContract();
-      });
-
-      it("should succeed", () => {
-        assert.isTrue(reciept.success)
-      })
+  describe("deploying an instance of the contract", () => {
+    let reciept: Receipt;
+    before(async () => {
+      reciept = await client.deployContract();
     });
+
+    it("should succeed", () => {
+      assert.isTrue(reciept.success)
+    })
+  });
+
+  describe("when checking security measures", () => {
+
 
     describe("when not allowed to add an item", () => {
       let reciept: Receipt;
