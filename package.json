@@ -1,9 +1,9 @@
 {
   "name": "endless-list",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": {
     "name": "Alex Addams",
-    "email": "alex.addams@67bricks.com"
+    "email": "github@xmakina.co.uk"
   },
   "repository": "https://github.com/xmakina/endless-list.git",
   "private": true,
